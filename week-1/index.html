@@ -12,15 +12,25 @@
         <h1>Mark Lumb</h1>
     </header>
 
+
+
     <main>
-        <article name ="about-me">
+        <div name ="about-me" id ="about-me">
+
                 <h2>About Me</h2>
+
             <section name ="profile-picture">
                 <p>Profile Picture goes here</p>
+                    <img src=".\images\me-headshot.jpg" alt="Profile Picture" style ="width:150px;" class = "picture">
+                    <img src=".\images\onion-pfp.png" alt="Profile Picture" style ="width:150px;" class = "picture">
             </section>
+        <br>
             <section name ="bio">
-                <p>Hello Hello! My name is <span>Mark Lumb</span>. I am a passionate web developer with a keen interest in creating responsive and user-friendly websites. So far, I have been working on various projects to enhance my skills in <span>C#, HTML, CSS, and JavaScript</span>.</p>
+                <p>Hello Hello! My name is <span name="real-name" class="name">Mark Lumb</span>. I am a passionate web developer with a keen interest in creating responsive and user-friendly websites.</p>
+                <p>So far, I have been working on various projects to enhance my skills in <span>C#, HTML, CSS, and JavaScript</span>.</p>
+                <p>I also go by the name <span name="online-name" class="name">Onion</span> in online communities.
             </section>
+
             <section name ="hobbies-interests">
                 <h3>My Hobbies and Interests:</h3>
                 <ul>
@@ -31,45 +41,58 @@
                     <li>Doodling</li>
                 </ul>
             </section>
-        </article>
 
-        <article name ="projects">
+        </div>
+
+        <div name ="projects" id ="projects">
+
             <h2>Projects</h2>
-            <p>Put two project images here!</p>
-            <br>
+
             <section name ="project-1">
                 <h3>Project 1 Title</h3>
                 <p>Project 1 Image</p>
                 <p>Put some text about project 1 here!</p>
             </section>
-            <br>
+        <br>
             <section name ="project-2">
                 <h3>Project 2 Title</h3>
                 <p>Project 2 Image</p>
                 <p>Put some text about project 2 here!</p>
             </section>
-            <br>
-        </article>
 
-        <article name ="contact-me">
+        </div>
+
+        <div name ="contact-me" id ="contact-me">
+            <h2>Contact Me</h2>
+
             <section name ="contact-my-info">
-                <h2>My Contact Information:</h2>
+                <h3>My Contact Information:</h3>
                 <p>Put contact details here! -> displayed!! (not a form)</p>
-                <h3>Email:</h3>  <!-- Put email address here -->
-                <h3>Phone:</h3>
+                <h4>Email:</h4>  <!-- Put email address here -->
+                <h4>Phone:</h4>  <!-- Put phone number here -->
                 <p>Put hyperlinks for email 'mailto:' and phone 'tel:'</p>
-                <br>
             </section>
-            <section name ="contact-form">
-                <h2>Contact Me Form:</h2>
-                <p>Put a form for user to input 'name' , 'email' and 'message' + 'submit button'</p>
-            </section>
-        </article>
+        <br>
 
-        <footer name ="footer">
-            <p>© 2024 Mark Lumb + other copyright thingy me things</p>
-        </footer>
+            <h2>Contact Me Form:</h2>
+                <section name ="contact-form">
+                    <form class ="contact-form">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="input your name here"><br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="input your email here"><br><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" placeholder="context of your inquiry"></textarea><br><br>
+                        <input type="submit" value="Submit">
+                </section>
 
+            
+            
+        </div>
+
+            <footer name ="footer">
+                <p>© 2024 Mark Lumb + other copyright thingy me things</p>
+            </footer>
 
     </main>
 </body>
