@@ -10,89 +10,98 @@
 
     <header>
         <h1>Mark Lumb</h1>
+
+        <ul class="navigation">
+            <li class="nav-item"><a href="#about-me">About Me</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#contact-me">Contact Me</a></li>
+        </ul>
+
     </header>
 
+   
 
 
     <main>
-        <div name ="about-me" id ="about-me">
+        <section name ="about-me" id ="about-me">
 
                 <h2>About Me</h2>
 
-            <section name ="profile-picture">
+            <div name ="profile-picture">
                 <p>Profile Picture goes here</p>
                     <img src=".\images\me-headshot.jpg" alt="Profile Picture" style ="width:150px;" class = "picture">
                     <img src=".\images\onion-pfp.png" alt="Profile Picture" style ="width:150px;" class = "picture">
-            </section>
+            </div>
         <br>
-            <section name ="bio">
+            <div name ="bio">
                 <p>Hello Hello! My name is <span name="real-name" class="name">Mark Lumb</span>. I am a passionate web developer with a keen interest in creating responsive and user-friendly websites.</p>
                 <p>So far, I have been working on various projects to enhance my skills in <span>C#, HTML, CSS, and JavaScript</span>.</p>
                 <p>I also go by the name <span name="online-name" class="name">Onion</span> in online communities.
-            </section>
+            </div>
 
-            <section name ="hobbies-interests">
+            <div name ="hobbies-interests">
                 <h3>My Hobbies and Interests:</h3>
                 <ul>
-                    <li>Live Streaming</li>
-                    <li>Guitar</li>
-                    <li>Video Games</li>
-                    <li>Hiking</li>
-                    <li>Doodling</li>
+                    <li class="hobby-item">Live Streaming</li>
+                    <li class="hobby-item">Guitar</li>
+                    <li class="hobby-item">Video Games</li>
+                    <li class="hobby-item">Hiking</li>
+                    <li class="hobby-item">Doodling</li>
                 </ul>
-            </section>
+            </div>
 
-        </div>
+        </section>
 
-        <div name ="projects" id ="projects">
+        <section name ="projects" id ="projects">
 
             <h2>Projects</h2>
 
-            <section name ="project-1">
+            <div name ="project-1">
                 <h3>Project 1 Title</h3>
                 <p>Project 1 Image</p>
                 <p>Put some text about project 1 here!</p>
-            </section>
+            </div>
         <br>
-            <section name ="project-2">
+            <div name ="project-2">
                 <h3>Project 2 Title</h3>
                 <p>Project 2 Image</p>
                 <p>Put some text about project 2 here!</p>
-            </section>
+            </div>
 
-        </div>
+        </section>
 
-        <div name ="contact-me" id ="contact-me">
+        <section name ="contact-me" id ="contact-me">
             <h2>Contact Me</h2>
 
-            <section name ="contact-my-info">
+            <div name ="contact-my-info">
                 <h3>My Contact Information:</h3>
                 <p>Put contact details here! -> displayed!! (not a form)</p>
                 <h4>Email:</h4>  <!-- Put email address here -->
                 <h4>Phone:</h4>  <!-- Put phone number here -->
                 <p>Put hyperlinks for email 'mailto:' and phone 'tel:'</p>
-            </section>
+            </div>
         <br>
 
             <h2>Contact Me Form:</h2>
-                <section name ="contact-form">
-                    <form class ="contact-form">
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name" placeholder="input your name here"><br><br>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" placeholder="input your email here"><br><br>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="4" cols="50" placeholder="context of your inquiry"></textarea><br><br>
-                        <input type="submit" value="Submit">
-                </section>
+
+            <div name ="contact-form">
+                <form class ="contact-form">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="input your name here"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="input your email here"><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="context of your inquiry"></textarea><br><br>
+                    <input type="submit" value="Submit">
+            </div>
 
             
             
-        </div>
+        </section>
 
-            <footer name ="footer">
-                <p>© 2024 Mark Lumb + other copyright thingy me things</p>
-            </footer>
+        <footer name ="footer">
+            <p>© 2024 Mark Lumb + other copyright thingy me things</p>
+        </footer>
 
     </main>
 </body>
