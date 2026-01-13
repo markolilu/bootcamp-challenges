@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #6bb868;
+    --secondary-color: #333333;
+    --background-color: #eeeeee;
+    --text-color: #333333;
+    --header-background: #6bb868;
+    --footer-background: #6bb868;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,43 +16,46 @@
 
 /* Element Styles */
 header {
-    position :relative ;
+    background-color: var(--primary-color);
 }
 
 body{
-    background-color: #eeeeee;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.6;
     padding: 0px;
 }
 
 section {
     background: #dddddd;
-    padding: 20px;
+    padding: 0px;
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%
 }
 
 div {
     margin-bottom: 15px;
+    padding: 10px;
     background: #cccccc;
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #6bb868;
+    background: var(--primary-color)
     color: #fff;
     margin-top: 10px;
 }
 
 h1 {
     font-weight: bold;
-    background: #6bb868;
+    background: var(--primary-color)
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -54,7 +66,7 @@ h1 {
 
 h2 {
     font-style: italic;
-    color: #6bb868;
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
