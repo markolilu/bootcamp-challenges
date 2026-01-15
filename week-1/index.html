@@ -78,7 +78,7 @@
 </div>
 <br>
 <div class = "divider">
-                <p>I also go by the name <span name="online-name" class="name">Onion</span> in online communities.
+                <p><em>I also go by the name <span name="online-name" class="name">Onion</span> in online communities.</em>
             </div>
 <br>
             <div name ="hobbies-interests" class="hobbies-interests">
@@ -106,7 +106,7 @@
                     <p>Project 1 Image</p>
                     <p>Put some text about project 1 here!</p>
                 </div>
-                <div name ="project-2">
+                <div name ="project-2" class="project">
                     <h3>Project 2 Title</h3>
                     <p>Project 2 Image</p>
                     <p>Put some text about project 2 here!</p>
@@ -119,26 +119,31 @@
             <h2>Contact Me</h2>
 </div>
 
-            <div name ="contact-my-info">
+            <div name ="contact-my-info" class = "contact-my-info">
                 <h3>My Contact Information:</h3>
-                <p>Put contact details here! -> displayed!! (not a form)</p>
-                <h4>Email:</h4>  <!-- Put email address here -->
-                <h4>Phone:</h4>  <!-- Put phone number here -->
-                <p>Put hyperlinks for email 'mailto:' and phone 'tel:'</p>
+                <br>
+                <div class="section-splitter">
+                    <h4>Email:<a href="mailto:mark@example.com">mark@example.com</a></h4>  <!-- Put email address here -->
+                    <h4>Phone:<a href="tel:+1234567890">+1234567890</a></h4>  <!-- Put phone number here -->
+                </div>
             </div>
         <br>
-
+        <br>
+ <div class="div-header">
             <h2>Contact Me Form:</h2>
+            </div>
 
             <div name ="contact-form">
                 <form class ="contact-form">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" placeholder="input your name here"><br><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" placeholder="input your email here"><br><br>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="50" placeholder="context of your inquiry"></textarea><br><br>
-                    <input type="submit" value="Submit">
+                    <label for="name" class="label-name">Name:</label><br>
+                    <input type="text" class="form-input" id="name" name="name" placeholder="input your name"><br><br>
+                    <label for="telephone" class="label-telephone">Telephone:</label><br>
+                    <input type="tel" class="form-input" id="telephone" name="telephone" placeholder="input your telephone"><br><br>
+                    <label for="email" class="label-email">Email:</label><br>
+                    <input type="email" class="form-input" id="email" name="email" placeholder="input your email"><br><br>
+                    <label for="message" class="label-message">Message:</label><br>
+                    <textarea id="message" class="form-input" name="message" rows="4" cols="50" placeholder="context of your inquiry"></textarea><br><br>
+                    <input type="submit" class="button" value="Submit">
             </div>
 
             
